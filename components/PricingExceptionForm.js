@@ -62,7 +62,7 @@ export default function PricingExceptionForm() {
       const calculatedNet = totalPrice + borrowerPoints;
       setFormData(prev => ({
         ...prev,
-        netPricing: calculatedNet.toFixed(2)
+        netPricing: calculatedNet.toFixed(3)
       }));
     }
   }, [formData.totalPrice, formData.borrowerPaidPoints]);
@@ -76,7 +76,7 @@ export default function PricingExceptionForm() {
     const dollarAmount = (bps / 100) * loanAmt;
     
     return {
-      bps: bps.toFixed(2),
+      bps: bps.toFixed(3),
       dollars: dollarAmount.toFixed(2)
     };
   };
@@ -675,7 +675,7 @@ Submitted: ${new Date().toLocaleString()}`);
                 </label>
                 <input
                   type="number"
-                  step="0.01"
+                  step="0.001"
                   className="input-field"
                   placeholder="Calculated automatically"
                   value={formData.netPricing}

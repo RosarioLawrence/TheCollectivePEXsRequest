@@ -260,6 +260,10 @@ Submitted: ${new Date().toLocaleString()}`);
           }
         }
         
+        * {
+          box-sizing: border-box;
+        }
+        
         .fade-in {
           animation: fadeInUp 0.6s ease-out;
         }
@@ -303,16 +307,16 @@ Submitted: ${new Date().toLocaleString()}`);
           backdrop-filter: blur(10px);
           border: 1px solid #b8a3e8;
           border-radius: 16px;
-          padding: 2rem;
+          padding: 2.5rem;
           margin-bottom: 1.5rem;
           box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
         }
         
         .calc-card {
-          background: linear-gradient(135deg, #eef2ff 0%, #b8a3e8 100%);
+          background: linear-gradient(135deg, #e8dff5 0%, #d4bbf7 100%);
           border: 2px solid #b8a3e8;
           border-radius: 12px;
-          padding: 1.25rem;
+          padding: 1.5rem;
           text-align: center;
         }
         
@@ -409,7 +413,7 @@ Submitted: ${new Date().toLocaleString()}`);
           <h1 style={{
             fontSize: 'clamp(2rem, 5vw, 3rem)',
             fontWeight: '700',
-            color: '#1e293b',
+            color: 'white',
             marginBottom: '0.5rem',
             letterSpacing: '-0.03em'
           }}>
@@ -420,7 +424,7 @@ Submitted: ${new Date().toLocaleString()}`);
             fontWeight: '600',
             letterSpacing: '0.05em',
             textTransform: 'uppercase',
-            color: '#667eea',
+            color: 'white',
             marginBottom: '0.5rem'
           }}>
             PrimeLending
@@ -428,13 +432,13 @@ Submitted: ${new Date().toLocaleString()}`);
           <div style={{
             fontSize: '0.9375rem',
             fontWeight: '500',
-            color: '#64748b',
+            color: 'rgba(255, 255, 255, 0.95)',
             marginBottom: '0.75rem'
           }}>
             Westlake Village • Petaluma • Oxnard
           </div>
           <p style={{
-            color: '#64748b',
+            color: 'rgba(255, 255, 255, 0.9)',
             fontSize: '1rem',
             fontWeight: '500'
           }}>
@@ -456,7 +460,7 @@ Submitted: ${new Date().toLocaleString()}`);
             Loan Officer Information
           </label>
           
-          <div style={{ display: 'grid', gap: '1.25rem' }}>
+          <div style={{ display: 'grid', gap: '1.5rem' }}>
             <div>
               <label style={{
                 display: 'block',
@@ -476,7 +480,7 @@ Submitted: ${new Date().toLocaleString()}`);
               />
             </div>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
               <div>
                 <label style={{
                   display: 'block',
@@ -530,8 +534,8 @@ Submitted: ${new Date().toLocaleString()}`);
             Loan Details
           </h2>
           
-          <div style={{ display: 'grid', gap: '1.25rem' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+          <div style={{ display: 'grid', gap: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
               <div>
                 <label style={{
                   display: 'block',
@@ -596,7 +600,7 @@ Submitted: ${new Date().toLocaleString()}`);
               />
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
               <div>
                 <label style={{
                   display: 'block',
@@ -638,7 +642,7 @@ Submitted: ${new Date().toLocaleString()}`);
               </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
               <div>
                 <label style={{
                   display: 'block',
@@ -752,7 +756,7 @@ Submitted: ${new Date().toLocaleString()}`);
           <div style={{ 
             display: 'grid', 
             gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            gap: '1.25rem' 
+            gap: '1.5rem' 
           }}>
             <div className="calc-card" style={{
               background: bpsColorStyle.background,
@@ -805,7 +809,7 @@ Submitted: ${new Date().toLocaleString()}`);
             Competitive Information
           </h2>
           
-          <div style={{ display: 'grid', gap: '1.25rem' }}>
+          <div style={{ display: 'grid', gap: '1.5rem' }}>
             <div>
               <label style={{
                 display: 'block',

@@ -220,7 +220,7 @@ Submitted: ${new Date().toLocaleString()}`);
   return (
     <div style={{
       minHeight: '100vh',
-      background: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%)',
+      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
       padding: '2rem 1rem',
       fontFamily: '"Inter Tight", system-ui, sans-serif'
     }}>
@@ -265,8 +265,9 @@ Submitted: ${new Date().toLocaleString()}`);
         }
         
         .input-field {
-          background: white;
-          border: 2px solid #e0e7ff;
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(10px);
+          border: 2px solid #b8a3e8;
           color: #1e293b;
           padding: 0.875rem 1rem;
           border-radius: 10px;
@@ -278,9 +279,9 @@ Submitted: ${new Date().toLocaleString()}`);
         
         .input-field:focus {
           outline: none;
-          border-color: #6366f1;
-          background: #fafbff;
-          box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+          border-color: #667eea;
+          background: #fefeff;
+          box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
         }
         
         .input-field::placeholder {
@@ -298,17 +299,18 @@ Submitted: ${new Date().toLocaleString()}`);
         }
         
         .form-section {
-          background: white;
-          border: 1px solid #e0e7ff;
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(10px);
+          border: 1px solid #b8a3e8;
           border-radius: 16px;
           padding: 2rem;
           margin-bottom: 1.5rem;
-          box-shadow: 0 4px 20px rgba(99, 102, 241, 0.08);
+          box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
         }
         
         .calc-card {
-          background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
-          border: 2px solid #c7d2fe;
+          background: linear-gradient(135deg, #eef2ff 0%, #b8a3e8 100%);
+          border: 2px solid #b8a3e8;
           border-radius: 12px;
           padding: 1.25rem;
           text-align: center;
@@ -316,7 +318,7 @@ Submitted: ${new Date().toLocaleString()}`);
         
         .calc-label {
           font-size: 0.8125rem;
-          color: #64748b;
+          color: #5b21b6;
           text-transform: uppercase;
           letter-spacing: 0.08em;
           font-weight: 600;
@@ -327,7 +329,7 @@ Submitted: ${new Date().toLocaleString()}`);
           font-family: 'JetBrains Mono', monospace;
           font-size: 1.75rem;
           font-weight: 700;
-          color: #6366f1;
+          color: #667eea;
         }
         
         .attestation-warning {
@@ -365,12 +367,12 @@ Submitted: ${new Date().toLocaleString()}`);
         }
         
         .checkbox:checked {
-          background: #6366f1;
-          border-color: #6366f1;
+          background: #667eea;
+          border-color: #667eea;
         }
         
         .copy-button {
-          background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
           color: white;
           border: none;
           padding: 1rem 2rem;
@@ -380,13 +382,13 @@ Submitted: ${new Date().toLocaleString()}`);
           cursor: pointer;
           transition: all 0.3s ease;
           width: 100%;
-          box-shadow: 0 4px 16px rgba(99, 102, 241, 0.25);
+          box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
           font-family: 'Inter Tight', sans-serif;
         }
         
         .copy-button:hover {
           transform: translateY(-2px);
-          box-shadow: 0 6px 24px rgba(99, 102, 241, 0.35);
+          box-shadow: 0 6px 24px rgba(102, 126, 234, 0.4);
         }
         
         .copy-button:active {
@@ -418,7 +420,7 @@ Submitted: ${new Date().toLocaleString()}`);
             fontWeight: '600',
             letterSpacing: '0.05em',
             textTransform: 'uppercase',
-            color: '#6366f1',
+            color: '#667eea',
             marginBottom: '0.5rem'
           }}>
             PrimeLending
@@ -444,7 +446,7 @@ Submitted: ${new Date().toLocaleString()}`);
         <div className="form-section fade-in" style={{ animationDelay: '0.1s' }}>
           <label style={{
             display: 'block',
-            color: '#6366f1',
+            color: '#667eea',
             fontWeight: '600',
             marginBottom: '0.75rem',
             fontSize: '0.875rem',
@@ -776,16 +778,16 @@ Submitted: ${new Date().toLocaleString()}`);
           <div style={{
             marginTop: '1.5rem',
             padding: '1rem',
-            background: '#f8fafc',
+            background: '#faf5ff',
             borderRadius: '8px',
-            border: '1px solid #e2e8f0'
+            border: '1px solid #e9d5ff'
           }}>
             <div style={{
               color: '#64748b',
               fontSize: '0.8125rem',
               lineHeight: '1.6'
             }}>
-              <strong style={{ color: '#6366f1' }}>Formula:</strong> Total Pricing Exception (Bps) = Net Pricing - 100 | 
+              <strong style={{ color: '#667eea' }}>Formula:</strong> Total Pricing Exception (Bps) = Net Pricing - 100 | 
               Total Pricing Exception ($) = (Bps ÷ 100) × Loan Amount
             </div>
           </div>
@@ -877,7 +879,7 @@ Submitted: ${new Date().toLocaleString()}`);
               className="copy-button"
               onClick={openEmail}
               style={{
-                background: 'linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)'
+                background: 'linear-gradient(135deg, #667eea 0%, #4f46e5 100%)'
               }}
             >
               ✉️ Open in Email
@@ -889,7 +891,7 @@ Submitted: ${new Date().toLocaleString()}`);
               style={{
                 background: copied 
                   ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)'
-                  : 'linear-gradient(135deg, #818cf8 0%, #6366f1 100%)',
+                  : 'linear-gradient(135deg, #818cf8 0%, #667eea 100%)',
                 border: copied ? 'none' : '2px solid #c7d2fe'
               }}
             >
@@ -903,7 +905,7 @@ Submitted: ${new Date().toLocaleString()}`);
             color: '#64748b',
             fontSize: '0.875rem'
           }}>
-            Send to: <strong style={{ color: '#6366f1' }}>rosario.lawrence@primelending.com</strong>
+            Send to: <strong style={{ color: '#667eea' }}>rosario.lawrence@primelending.com</strong>
           </div>
         </div>
       </div>
